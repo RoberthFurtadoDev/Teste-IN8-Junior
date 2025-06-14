@@ -70,6 +70,7 @@ cd apps/backend
 
 ## Inicie o servidor em modo de desenvolvimento
 npm run start:dev
+
 O servidor estará rodando em http://localhost:3000.
 
 Bash
@@ -79,6 +80,7 @@ cd apps/frontend
 
 ## Inicie o servidor de desenvolvimento
 npm run dev
+
 A aplicação web estará disponível em http://localhost:5173.
 
 Bash
@@ -89,6 +91,7 @@ cd apps/mobile
 
 ## Execute o aplicativo
 flutter run
+
 O código já está configurado para se comunicar com o backend a partir do navegador/emulador.
 
 ## 🧠 DECISÕES TÉCNICAS E ARQUITETURAIS
