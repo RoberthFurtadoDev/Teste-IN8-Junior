@@ -48,46 +48,46 @@ Para instalar o projeto, siga estas etapas:
 
 Bash
 
-# Clone o repositório
+## Clone o repositório
 git clone https://github.com/RoberthFurtadoDev/Teste-IN8-Junior.git
 
-# Navegue até a pasta do projeto
+## Navegue até a pasta do projeto
 cd Teste-IN8-Junior
 
-# Instale todas as dependências (backend e frontend)
+## Instale todas as dependências (backend e frontend)
 npm install
 ## 🔥 EXECUTANDO A APLICAÇÃO
 Para rodar a aplicação completa, você precisará de 3 terminais abertos na raiz do projeto.
 
 Bash
 
-# A partir da pasta raiz, inicie o contêiner do PostgreSQL
+## A partir da pasta raiz, inicie o contêiner do PostgreSQL
 docker-compose up -d
 Bash
 
-# Navegue até a pasta do backend
+## Navegue até a pasta do backend
 cd apps/backend
 
-# Inicie o servidor em modo de desenvolvimento
+## Inicie o servidor em modo de desenvolvimento
 npm run start:dev
 O servidor estará rodando em http://localhost:3000.
 
 Bash
 
-# Navegue até a pasta do frontend
+## Navegue até a pasta do frontend
 cd apps/frontend
 
-# Inicie o servidor de desenvolvimento
+## Inicie o servidor de desenvolvimento
 npm run dev
 A aplicação web estará disponível em http://localhost:5173.
 
 Bash
 
-# Garanta que um emulador Android esteja rodando
-# Navegue até a pasta do app mobile
+## Garanta que um emulador Android esteja rodando
+## Navegue até a pasta do app mobile
 cd apps/mobile
 
-# Execute o aplicativo
+## Execute o aplicativo
 flutter run
 O código já está configurado para se comunicar com o backend a partir do navegador/emulador.
 
