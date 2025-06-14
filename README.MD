@@ -1,137 +1,99 @@
-# ROJETO E-COMMERCE FULL-STACK - DEV[N]OLOGY
+## PROJETO E-COMMERCE FULL-STACK - DEV[N]OLOGY
+Solução completa de e-commerce desenvolvida para o desafio técnico de Desenvolvedor(a) Full-Stack. O sistema integra produtos de dois fornecedores distintos via API e oferece uma experiência de compra através de uma aplicação web (React) e um aplicativo mobile (Flutter), ambos consumindo um backend centralizado (NestJS).
+--
 
-!(https://img.shields.io/badge/react-%2320232A.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+## ✨ FUNCIONALIDADES IMPLEMENTADAS
+O projeto foi concluído com sucesso, entregando todos os requisitos obrigatórios e opcionais.
 
-!(https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
+[x] Backend em Node.js com NestJS
 
-!(https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+[x] Endpoint unificado para produtos
 
-Este repositório contém a solução completa para o desafio técnico de Desenvolvedor(a) Full-Stack Júnior. O projeto consiste em uma plataforma de e-commerce que integra produtos de dois fornecedores distintos (um brasileiro e um europeu) e oferece uma experiência de compra coesa através de uma aplicação web (React) e um aplicativo mobile (Flutter), ambos consumindo um backend centralizado (NestJS).
+[x] Registro de compras no banco de dados via API
 
-# 🌟 FUNCIONALIDADES PRINCIPAIS
+[x] Interface Web com React
 
-BACKEND UNIFICADO: Uma API RESTful em NestJS que atua como um API Gateway, buscando, unificando e servindo os dados dos produtos de forma centralizada.    
+[x] Listagem de produtos dos dois fornecedores
 
-PERSISTÊNCIA DE DADOS: Registro de todos os pedidos e dados de clientes em um banco de dados PostgreSQL, gerenciado via Docker.    
+[x] Busca e filtro de produtos
 
-APLICAÇÃO WEB (REACT): Interface reativa e moderna construída com Vite, permitindo:
+[x] Carrinho de compras (adicionar/remover)
 
-Listagem de produtos com busca por nome e filtro por origem.
+[x] Finalização da compra com formulário
 
-Carrinho de compras com gerenciamento de estado local (Context API).
+[x] Aplicativo Mobile com Flutter
 
-Formulário de checkout para finalização da compra.
+[x] Listagem de produtos consumindo o mesmo backend
 
-APLICATIVO MOBILE (FLUTTER): Experiência nativa para Android (e iOS) com as mesmas funcionalidades da aplicação web, compartilhando o mesmo backend.
+[x] Carrinho de compras funcional
 
-# 🎥 DEMONSTRAÇÃO
+[x] Finalização da compra e registro do pedido
+--
 
-APLICAÇÃO WEB (REACT)
+## 💻 PRÉ-REQUISITOS
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-APLICATIVO MOBILE (FLUTTER)
-
-!(https://i.imgur.com/g8e1m8F.png)
-
-!(https://i.imgur.com/e8p2T6I.png)
-
-# 🛠️ TECNOLOGIAS UTILIZADAS
-Categoria
-
-Tecnologia
-
-Backend
-
-Node.js, NestJS, TypeScript, TypeORM
-
-Frontend Web
-
-React, Vite, TypeScript, Tailwind CSS
-
-App Mobile
-
-Flutter, Dart
-
-Banco de Dados
-
-PostgreSQL
-
-Gerenciamento de Estado
-
-React Context API, Flutter Provider
-
-Containerização
-
-Docker, Docker Compose
-
-Testes de API
-
-Insomnia / Postman
-
-# 🚀 COMO RODAR O PROJETO
-Este projeto é um monorepo. Todos os comandos de instalação e execução devem ser feitos a partir do diretório raiz, salvo indicação contrária.
-
-PRÉ-REQUISITOS
-Antes de começar, garanta que você tem as seguintes ferramentas instaladas:
+Você instalou a versão mais recente de:
 
 Node.js (v18 ou superior)
--(https://flutter.dev/docs/get-started/install)
--(https://www.docker.com/products/docker-desktop/) e Docker Compose
 
-INSTALAÇÃO
-Clone o repositório:
+(https://flutter.dev/docs/get-started/install)
+
+(https://www.docker.com/products/docker-desktop/)
+
+Você tem uma máquina Windows, Linux ou Mac.
+
+Você tem um editor de código como o VS Code.
+
+## 🚀 INSTALANDO O PROJETO
+Para instalar o projeto, siga estas etapas:
 
 Bash
 
+# Clone o repositório
 git clone https://github.com/RoberthFurtadoDev/Teste-IN8-Junior.git
+
+# Navegue até a pasta do projeto
 cd Teste-IN8-Junior
-Instale todas as dependências (backend e frontend) com um único comando a partir da raiz:
 
-Bash
-
+# Instale todas as dependências (backend e frontend)
 npm install
-EXECUÇÃO
-Para rodar a aplicação completa, você precisará de 3 terminais abertos.
-
-1. INICIAR O BANCO DE DADOS (POSTGRESQL)
-
-No primeiro terminal, a partir da pasta raiz, inicie o contêiner do Docker:
+## 🔥 EXECUTANDO A APLICAÇÃO
+Para rodar a aplicação completa, você precisará de 3 terminais abertos na raiz do projeto.
 
 Bash
 
+# A partir da pasta raiz, inicie o contêiner do PostgreSQL
 docker-compose up -d
-2. INICIAR O BACKEND (NESTJS)
-
-No segundo terminal, navegue até a pasta do backend e inicie o servidor:
-
 Bash
 
+# Navegue até a pasta do backend
 cd apps/backend
+
+# Inicie o servidor em modo de desenvolvimento
 npm run start:dev
 O servidor estará rodando em http://localhost:3000.
 
-3. INICIAR A APLICAÇÃO WEB (REACT)
-
-No terceiro terminal, navegue até a pasta do frontend e inicie o servidor de desenvolvimento:
-
 Bash
 
+# Navegue até a pasta do frontend
 cd apps/frontend
+
+# Inicie o servidor de desenvolvimento
 npm run dev
-A aplicação web estará disponível em http://localhost:5173 (ou outra porta indicada pelo Vite).
-
-4. INICIAR O APLICATIVO MOBILE (FLUTTER)
-
-Garanta que um emulador Android esteja rodando ou um dispositivo físico esteja conectado.
-
-No terceiro terminal (ou em um novo), navegue até a pasta do app mobile e execute:
+A aplicação web estará disponível em http://localhost:5173.
 
 Bash
 
+# Garanta que um emulador Android esteja rodando
+# Navegue até a pasta do app mobile
 cd apps/mobile
-flutter run
-Importante: O código do Flutter já está configurado para usar o IP 10.0.2.2 para se comunicar com o backend rodando no seu computador a partir do emulador Android.
 
-# 🧠 DECISÕES TÉCNICAS E ARQUITETURAIS
+# Execute o aplicativo
+flutter run
+O código já está configurado para se comunicar com o backend a partir do navegador/emulador.
+
+## 🧠 DECISÕES TÉCNICAS E ARQUITETURAIS
 Esta seção detalha as principais escolhas feitas durante o desenvolvimento, visando não apenas cumprir os requisitos, mas construir uma solução robusta, escalável e alinhada com as melhores práticas do mercado.    
 
 1. ARQUITETURA DE MONOREPO
@@ -142,7 +104,7 @@ Justificativa: Esta abordagem centraliza a gestão de dependências, simplifica 
 2. BACKEND COMO API GATEWAY
 Decisão: Em vez de fazer os clientes (React e Flutter) chamarem as duas APIs de fornecedores, o backend em NestJS foi implementado seguindo o padrão API Gateway.    
 
-Justificativa: Esta é a decisão arquitetural mais impactante do projeto. Ela abstrai a complexidade dos múltiplos fornecedores para os clientes, que agora consomem um único e coeso endpoint (/products). Isso simplifica drasticamente o código do frontend e do mobile, centraliza a lógica de negócios, permite a implementação de cache no servidor e torna o sistema muito mais fácil de manter e escalar (adicionar um novo fornecedor se torna uma tarefa exclusiva do backend).    
+Justificativa: Esta é a decisão arquitetural mais impactante do projeto. Ela abstrai a complexidade dos múltiplos fornecedores para os clientes, que agora consomem um único e coeso endpoint (/products). Isso simplifica drasticamente o código do frontend e do mobile, centraliza a lógica de negócios, permite a implementação de cache no servidor e torna o sistema muito mais fácil de manter e escalar.    
 
 3. GERENCIAMENTO DE ESTADO
 React (Context API): Para o carrinho de compras na web, foi escolhida a Context API nativa do React.    
@@ -163,4 +125,4 @@ Decisão: O desafio foi cumprido integralmente, com a entrega de ambas as plataf
 
 Justificativa: A construção de ambas as interfaces consumindo o mesmo backend demonstra uma compreensão completa do desenvolvimento full-stack e da importância de uma API bem projetada como a única fonte da verdade para múltiplos clientes.    
 
-Este projeto foi desenvolvido com o objetivo de demonstrar não apenas a capacidade de codificar, mas de pensar arquiteturalmente, tomar decisões técnicas justificadas e entregar uma solução completa e de alta qualidade.
+💻 Roberth Furtado © 2025 | Todos os direitos reservados.
