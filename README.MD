@@ -1,6 +1,5 @@
 ## PROJETO E-COMMERCE FULL-STACK - DEV[N]OLOGY
 Solução completa de e-commerce desenvolvida para o desafio técnico de Desenvolvedor(a) Full-Stack. O sistema integra produtos de dois fornecedores distintos via API e oferece uma experiência de compra através de uma aplicação web (React) e um aplicativo mobile (Flutter), ambos consumindo um backend centralizado (NestJS).
---
 
 ## ✨ FUNCIONALIDADES IMPLEMENTADAS
 O projeto foi concluído com sucesso, entregando todos os requisitos obrigatórios e opcionais.
@@ -28,7 +27,6 @@ O projeto foi concluído com sucesso, entregando todos os requisitos obrigatóri
 [x] Carrinho de compras funcional
 
 [x] Finalização da compra e registro do pedido
---
 
 ## 💻 PRÉ-REQUISITOS
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
