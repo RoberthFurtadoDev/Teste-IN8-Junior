@@ -1,0 +1,19 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Pastas de dependências
+node_modules
+
+# Arquivos de build
+dist
+.DS_Store
+
+# Arquivos de ambiente
+.env
+.env.local
+
+# Arquivos de editor
+.vscode
+.idea
