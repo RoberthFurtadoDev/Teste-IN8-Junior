@@ -28,6 +28,10 @@ O projeto foi concluído com sucesso, entregando todos os requisitos obrigatóri
 
 [x] Finalização da compra e registro do pedido
 
+## 🎥 DEMONSTRAÇÃO
+Imagens da solução/aplicação em execusão. 
+(https://imgur.com/a/PmxUrmX) 
+
 ## 💻 PRÉ-REQUISITOS
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
